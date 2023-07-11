@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_background">
+    <TextView
+        android:id="@+id/choose_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/nexabold"
+        android:text="@string/choose_text"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/button1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/nexabold"
+        android:text="@string/button1_heading"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="131dp"
+        android:layout_height="124dp"
+        android:layout_below="@id/button1_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/round_button"
+        android:onClick="onButton1Click"
+        android:src="@drawable/pg1" />
+
+    <TextView
+        android:id="@+id/button2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nexabold"
+        android:src="@drawable/c"
+        android:text="@string/button2_heading"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button1_text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:src="@drawable/c"
+        android:onClick="onButton2Click" />
+
+</RelativeLayout>

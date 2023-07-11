@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#611510">
+
+    <ImageView
+        android:id="@+id/reglogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/logs" />
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+
+        android:textSize="23sp"
+        android:layout_marginBottom="33dp"
+        android:textColor="@color/white"
+
+        android:fontFamily="@font/nexabold"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/baseline_alternate_email_24"
+        android:background="@drawable/edittext"
+        android:hint="Email"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/nexalight"
+        android:drawablePadding="12dp" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:paddingStart="12dp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_vpn_key_24"
+        android:background="@drawable/edittext"
+        android:hint="Password"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/nexalight"
+        android:drawablePadding="12dp" />
+
+
+
+
+    <Button
+        android:id="@+id/login"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#CC3030"
+        android:fontFamily="@font/nexabold"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btngoregister"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:backgroundTint="#CC3030"-->
+<!--        android:fontFamily="@font/nexabold"-->
+<!--        android:text="Register Now"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnregister"
+        android:text="Don't have an account? Register now"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:fontFamily="@font/nexabold"
+        android:layout_gravity="center_horizontal"
+
+        android:clickable="true"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

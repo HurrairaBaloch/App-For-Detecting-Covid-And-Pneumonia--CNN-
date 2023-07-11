@@ -1,0 +1,32 @@
+ <set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="700">
+
+
+<!--//it is neccory to create an anime folder -->
+<!--     //move left right up down-->
+<!--     only constant folder show in the res-->
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="0%"
+        android:fromYDelta="-50%p"
+        android:toYDelta="0%p"
+        android:pivotX="50%p"
+        android:pivotY="50%p" />
+<!--     //want to make object smaller or larger-->
+
+    <scale
+        android:fromXScale="0.5"
+        android:fromYScale="0.5"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        android:pivotX="50%p"
+        android:pivotY="50%p"
+        android:duration="50" />
+
+<!--     opacity-->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="50" />
+
+</set>
